@@ -1,10 +1,11 @@
 $face-width:400px;
+$header-width: $face-width + 20px;
 $header-height:150px;
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 70vh;
 
 
     .cube {
@@ -35,6 +36,13 @@ $header-height:150px;
         transform: rotateX(-90deg) translateZ(100px);
         /*Rotate 3d Frame*/
     }
+    .footer{
+        transform: rotateX(-90deg) translateZ(-150px) translateY(-20px);
+        width: 700px;
+        height: 700px;
+        margin-left: -200px;
+        background-color: darkgoldenrod;
+    }
     
     .right {
         transform: rotateY(90deg) translateZ(300px);
@@ -51,8 +59,17 @@ $header-height:150px;
     
     .front {
         transform: rotateX(0deg) translateZ(100px);
+        background-color: red;
         width: $face-width;
         /*Rotate 3d Frame*/
+    }
+    .center-head{
+        transform: rotateX(90deg) translateZ(100px) translateY(8px);
+        height: 45px;
+        width: $header-width;
+        margin-top: -8.5px;
+        background-color: aqua;
+        margin-left: -10px;
     }
     .front-head{
         margin-top: -40px;
@@ -61,7 +78,8 @@ $header-height:150px;
         background: #61433f;
         border: 1px solid;
         background-color: #eb573d;
-        width: $face-width;
+        width: $header-width;
+        margin-left: -10px;
     }
 
     .back-head{
@@ -71,8 +89,9 @@ $header-height:150px;
         background: #61433f;
         border: 1px solid;
         background-color: #0f2463;
-        width: $face-width;
+        width: $header-width;
         z-index: 999;
+        margin-left: -10px;
     }
     
     .back {
