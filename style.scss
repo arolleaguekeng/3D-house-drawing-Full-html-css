@@ -16,10 +16,18 @@ $header-height:150px;
         /*allows you to switch to 3d mode*/
         animation: spin 16s infinite linear;
         transition: all .3s;
+        margin-left: -10%;
+
+        .window{
+            height: 60px;
+            width: 60px;
+            background-color: white;
+            margin: 40px;
+        }
     }
     
     .cube:hover{
-        animation: spin 1.7s infinite linear;
+       
     }
     
     .face {
@@ -47,12 +55,20 @@ $header-height:150px;
     .right {
         transform: rotateY(90deg) translateZ(300px);
         background-color: #eb573d;
+        height: 300px;
+        margin-top: -63px;
+        border-top-left-radius: 225px;
+        border-top-right-radius: 225px;
         /*Rotate 3d Frame*/
     }
     
     .left {
-    
+        
         transform: rotateY(-90deg) translateZ(100px);
+        height: 300px;
+        margin-top: -63px;
+        border-top-left-radius: 225px;
+        border-top-right-radius: 225px;
         /*Rotate 3d Frame*/
     }
     
@@ -61,7 +77,22 @@ $header-height:150px;
         transform: rotateX(0deg) translateZ(100px);
         background-color: red;
         width: $face-width;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+
+        .dor{
+            height: 120px;
+            width: 80px;
+            border: 2px solid green;
+            background-color: antiquewhite;
+            margin-bottom: -70px;
+        }
         /*Rotate 3d Frame*/
+    }
+    .small-head-left{
+        transform: rotateY(-90deg) translateZ(100px);
     }
     .center-head{
         transform: rotateX(90deg) translateZ(100px) translateY(8px);
@@ -106,7 +137,8 @@ $header-height:150px;
         position: absolute;
         top: 0;
         left: 0;
-    
+        background-color: chartreuse;
+        width: $face-width;
         transform: rotateX(90deg) translateZ(100px);
     
     ;
@@ -125,11 +157,13 @@ $header-height:150px;
         }
     }
 
-    .header{
-        border-radius:50px 50px 50px 50px / 100px 100px 50px 50px;
-        width:60px;
-        height:70px;
-        background: #61433f;
-        border: 1px solid;
-    }
+
+}
+
+.header{
+    border-radius:10px 50px 50px 50px / 310px 100px 50px 50px;
+    width:200px;
+    height:200px;
+    background: #61433f;
+    border: 1px solid;
 }
