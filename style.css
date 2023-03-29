@@ -15,16 +15,19 @@
   margin-left: -10%;
 }
 .container .cube .window {
-  height: 60px;
+  height: 70px;
   width: 60px;
-  background-color: white;
   margin: 40px;
+  background-image: url(fen.png);
+  background-size: contain;
 }
 .container .face {
   position: absolute;
   width: 200px;
   height: 200px;
   background-color: black;
+  background-image: url(texture.jpg);
+  background-size: cover;
 }
 .container .bottom {
   transform: rotateX(-90deg) translateZ(100px);
@@ -35,15 +38,18 @@
   width: 700px;
   height: 700px;
   margin-left: -200px;
-  background-color: darkgoldenrod;
+  background-image: url(footer.jpg);
+  background-size: cover;
 }
 .container .right {
   transform: rotateY(90deg) translateZ(300px);
-  background-color: #eb573d;
   height: 300px;
   margin-top: -63px;
   border-top-left-radius: 225px;
   border-top-right-radius: 225px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /*Rotate 3d Frame*/
 }
 .container .left {
@@ -52,23 +58,27 @@
   margin-top: -63px;
   border-top-left-radius: 225px;
   border-top-right-radius: 225px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   /*Rotate 3d Frame*/
 }
 .container .front {
   transform: rotateX(0deg) translateZ(100px);
-  background-color: red;
   width: 400px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   /*Rotate 3d Frame*/
 }
-.container .front .dor {
+.container .front .door {
   height: 120px;
   width: 80px;
-  border: 2px solid green;
-  background-color: antiquewhite;
   margin-bottom: -70px;
+  background-image: url("door.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
 }
 .container .small-head-left {
   transform: rotateY(-90deg) translateZ(100px);
@@ -80,6 +90,8 @@
   margin-top: -8.5px;
   background-color: aqua;
   margin-left: -10px;
+  background-image: url(head.jpg);
+  background-size: cover;
 }
 .container .front-head {
   margin-top: -40px;
@@ -90,22 +102,23 @@
   background-color: #eb573d;
   width: 420px;
   margin-left: -10px;
+  background-image: url(head.jpg);
+  background-size: cover;
 }
 .container .back-head {
   margin-top: -36px;
   transform: rotateX(-226deg) translateZ(100px);
   height: 150px;
-  background: #61433f;
   border: 1px solid;
-  background-color: #0f2463;
   width: 420px;
   z-index: 999;
   margin-left: -10px;
+  background-image: url(head.jpg);
+  background-size: cover;
 }
 .container .back {
   transform: rotateX(-180deg) translateZ(100px);
   width: 400px;
-  background-color: #0f2463;
   /*Rotate 3d Frame*/
 }
 .container .top {
